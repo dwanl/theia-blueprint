@@ -1,0 +1,3 @@
+// yarn doesn't seem to properly wire pkg on linux...
+const pkg = require('pkg/package.json');
+require(`pkg/${pkg.bin.pkg}`);
